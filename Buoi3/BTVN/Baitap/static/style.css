@@ -1,0 +1,77 @@
+
+a {
+  color: red ;
+  text-decoration: none ;
+}
+
+.menu {
+  background: antiquewhite;
+  font-weight: bold;
+  color: red;
+  text-align: center;
+}
+
+span {
+  width: 100px;
+  height: 30px ;
+  position: relative;
+  line-height: 1.9;
+  display: inline-block;
+  vertical-align: middle;
+
+}
+
+span nav {
+  display: none ;
+}
+
+nav span a {
+  display: block;
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+
+
+.vertical-menu {
+  display: none ;
+  position: absolute;
+  background-color: antiquewhite;
+  z-index: 1 ;
+
+}
+.vertical-menu span{
+  background: antiquewhite;
+  width: 100px ;
+  height: 30px;
+  line-height: 1.9;
+  vertical-align: middle;
+  display: block;
+  text-decoration: none;
+  float: left;
+}
+
+span:hover {
+  background: green ;
+}
+
+span:hover > nav {
+  display: block;
+  position: absolute;
+}
+
+.menu span:hover > .vertical-menul{
+	position: absolute;
+	display: block;
+}
+
+.vertical-menu span:hover > .menu{
+	position: absolute;
+	left: 100%;
+	top: 0;
+}
+
+/* .rightmenu{
+  left: 100%;
+  top: 0 ;
+} */
