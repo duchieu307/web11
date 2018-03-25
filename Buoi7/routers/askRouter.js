@@ -9,8 +9,8 @@ Router.get("/", (req,res) => {
 })
 
 Router.post('/', (req,res) => {
-    questionController.create(req.body.question)
+    questionController.create(req.body.question) //tao va post cau hoi vao database
     res.render("ask")
 });
 
-module.exports = Router ;
+module.exports = Router ; // xuat Router ra
